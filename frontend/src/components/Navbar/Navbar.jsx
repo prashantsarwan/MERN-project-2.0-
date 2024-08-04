@@ -14,18 +14,17 @@ const Navbar = ({ setShowLogin }) => {
     <div className='Navbar'>
       <Link to='/'><img src={assets.logo} alt="Logo" className='logo' /></Link>
       <ul className="navbar-menu">
-        <li>
+        
           <Link to='/' onClick={() => setMenu("Home")} className={menu === "Home" ? "active" : ""}>Home</Link>
-        </li>
-        <li>
-          <Link to='#explore-menu' onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</Link>
-        </li>
-        <li>
-          <Link to='#app-download' onClick={() => setMenu("Mobile-app")} className={menu === "Mobile-app" ? "active" : ""}>Mobile-app</Link>
-        </li>
-        <li>
-          <Link to='#footer' onClick={() => setMenu("Contact us")} className={menu === "Contact us" ? "active" : ""}>Contact us</Link>
-        </li>
+        
+      
+          <a href='#explore-menu' onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</a>
+       
+      
+          <a href='#app-download' onClick={() => setMenu("Mobile-app")} className={menu === "Mobile-app" ? "active" : ""}>Mobile-app</a>
+       
+          <a href='#footer' onClick={() => setMenu("Contact us")} className={menu === "Contact us" ? "active" : ""}>Contact us</a>
+        
       </ul>
       <div className="navbar-right">
         <img src={assets.search_icon} alt="Search Icon" />
